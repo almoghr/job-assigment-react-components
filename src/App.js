@@ -1,9 +1,10 @@
 import './App.scss';
-
+import Search from './components/Search/Search'
 function App() {
   return (
     <div className="App">
-      start
+      <Search />
+      <Notifications />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import SearchIcon from "../icons/SearchIcon";
 import Xicon from "../icons/Xicon";
 import { recentSearchesArray } from "../../data/data";
-import RecentSearches from "../RecentSearches/RecentSearches";
+import PopUp from "../PopUp/PopUp";
 import "./Search.scss";
 
 const Search = () => {
@@ -28,14 +28,14 @@ const Search = () => {
      <div className='flexCLM'> 
       <div className="search" 
       >
-        {!isInputClicked ? <SearchIcon /> : <Xicon onClick={onCancelClick} />}
+        {!isInputClicked ? <SearchIcon /> : <Xicon onClick={onFocusChange} />}
         <input
           type="text"
           className={
             !isInputClicked ? "searchInput" : "search searchInput active"
           }
           placeholder={!isInputClicked ? "Search" : "Type your keywords"}
-          onFocus={!isInputClicked ? onFocusChange : undefined}
+          onClick={!isInputClicked ? onFocusChange : undefined}
         />
       </div>
       {isInputClicked && (
@@ -44,7 +44,7 @@ const Search = () => {
       {isInputClicked && recentSearchesArray.length > 0
         ? recentSearchesArray.map((recentSearch, index) => {
             const description = recentSearch.description;
-            return <RecentSearches key={index} description={description} />;
+            return <PopUp key={index} description={description} isCircle={false} isNotification={false}/>;
           })
         : null}
     </div>

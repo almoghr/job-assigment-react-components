@@ -1,0 +1,57 @@
+.searchMargin{
+    margin-left: 40px;
+
+}
+.recentContainer{
+    width: 200px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    .notificationFormation{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        .topNotificationOrganizer{
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-left: 10px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            .notificationCreated{
+                color: rgba(178, 179, 189, 1);
+            }
+        }
+        .bottomNotificationOrganizer {
+            display: flex;
+            font-size: 8px;
+            margin-left: 10px;
+            font-weight: 500;
+            .notificationType{
+                color:rgba(178, 179, 189, 1)
+            }
+            .notificationSubject{
+                color: rgba(95, 117, 238, 1);
+            }
+        }   
+    }
+    a{
+        text-decoration: none;
+        font-weight: 500;
+        color: black;
+        .description{
+            margin-left: 20px;
+            max-width: 60%;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline
+            }          
+        }
+    }
+}  
+.noBorder{
+    border: none;
+}  

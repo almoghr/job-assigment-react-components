@@ -3,6 +3,13 @@ body{
 }
 
 .App{
-  display: flex;
-  justify-content: space-around;
+  .part1{
+    display: flex;
+    justify-content: space-around;
+  }
+  .part2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
 }

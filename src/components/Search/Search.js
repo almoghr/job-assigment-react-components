@@ -3,6 +3,7 @@ import SearchIcon from "../icons/SearchIcon";
 import Xicon from "../icons/Xicon";
 import { recentSearchesArray } from "../../data/data";
 import PopUp from "../PopUp/PopUp";
+import ManyButtons from "../ManyButtons/ManyButtons";
 import "./Search.scss";
 
 const Search = () => {
@@ -18,16 +19,19 @@ const Search = () => {
 
   const onBlurReaction = () => {
     setisInputClicked(false);
-  }
-  const onCancelClick = () => {
-    console.log(isInputClicked)
-    setisInputClicked(false)
-    console.log(isInputClicked)
   };
+  const onCancelClick = () => {
+    console.log(isInputClicked);
+    setisInputClicked(false);
+    console.log(isInputClicked);
+  };
+
+  // <PopUp key={index} description={description} isCircle={false} isNotification={false}/>
+  // <ManyButtons isIcon={false} description={'Advances Search'}/>
+
   return (
-     <div className='flexCLM'> 
-      <div className="search" 
-      >
+    <div className="flexCLM">
+      <div className="search">
         {!isInputClicked ? <SearchIcon /> : <Xicon onClick={onFocusChange} />}
         <input
           type="text"
@@ -44,9 +48,17 @@ const Search = () => {
       {isInputClicked && recentSearchesArray.length > 0
         ? recentSearchesArray.map((recentSearch, index) => {
             const description = recentSearch.description;
-            return <PopUp key={index} description={description} isCircle={false} isNotification={false}/>;
+            return (
+              <PopUp
+                key={index}
+                description={description}
+                isCircle={false}
+                isNotification={false}
+              />
+            );
           })
         : null}
+        {isInputClicked && <ManyButtons isSearch isBlueButton isIcon={false} description={'Advanced  Search'}/>}
     </div>
   );
 };

@@ -12,3 +12,12 @@ export const notificationsArray = [
     {type: 'message', description: 'Sarah Saunders', created:'22h', activity: 'Sent You a Message📪', subject:'' },
     {type: 'like', description: 'Sarah Saunders', created:'22h', activity: 'Liked', subject: 'Folio Agency' }
 ]
+
+export const madeButtons = [
+    {type: 'blackBtn', icon:'plus', description:'Add Product'},
+    {type: 'blackBtn', icon:'plus', description:'Go'},
+    {type: 'blackBtn', icon:'plus', description:'Add More'},
+    {type: 'fadeGrayBtn', icon:'channeling', description:'Channel Listing'},
+    {type: 'fadeGrayBtn', icon:'3dots', description:'More Options'},
+    {type: 'fadeGrayBtn', icon:'checkbox', description:'1 Selected'}
+]

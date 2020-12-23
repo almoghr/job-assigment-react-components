@@ -1,11 +1,11 @@
-import React from 'react'
-import {AiOutlineInbox} from 'react-icons/ai'
+import React from "react";
+import { AiOutlineInbox } from "react-icons/ai";
 const InboxIcon = () => {
-    return (
-        <div>
-           <AiOutlineInbox /> 
-        </div>
-    )
-}
+  return (
+    <div>
+      <AiOutlineInbox />
+    </div>
+  );
+};
 
-export default InboxIcon
+export default InboxIcon;

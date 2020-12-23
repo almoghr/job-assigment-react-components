@@ -5,7 +5,8 @@ import "./ButtonDispencer.scss";
 const ButtonDispencer = () => {
   return (
     <div className="container">
-      {madeButtons && madeButtons.length > 0 &&
+      {madeButtons &&
+        madeButtons.length > 0 &&
         madeButtons.map((button, index) => {
           return (
             <ManyButtons

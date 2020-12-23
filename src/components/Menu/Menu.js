@@ -26,7 +26,13 @@ const Menu = () => {
         <div>
           {lowerMenuList.map((menuItem, index) => {
             return (
-              <MenuListItem key={index} description={menuItem.description} isUpperMenu={false} isNotification={false} notificationsLength={menuItem.length}/>
+              <MenuListItem
+                key={index}
+                description={menuItem.description}
+                isUpperMenu={false}
+                isNotification={false}
+                notificationsLength={menuItem.length}
+              />
             );
           })}
         </div>

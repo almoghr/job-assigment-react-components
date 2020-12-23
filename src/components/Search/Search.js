@@ -9,7 +9,6 @@ import "./Search.scss";
 const Search = () => {
   const [isInputClicked, setisInputClicked] = useState(false);
 
-
   useEffect(() => {}, [isInputClicked]);
 
   const onFocusChange = async () => {
@@ -24,7 +23,6 @@ const Search = () => {
   //   setisInputClicked(false);
   //   console.log(isInputClicked);
   // };
-
 
   return (
     <div className="flexCLM">
@@ -55,7 +53,14 @@ const Search = () => {
             );
           })
         : null}
-        {isInputClicked && <ManyButtons isSearch isBlueButton isIcon={false} description={'Advanced  Search'}/>}
+      {isInputClicked && (
+        <ManyButtons
+          isSearch
+          isBlueButton
+          isIcon={false}
+          description={"Advanced  Search"}
+        />
+      )}
     </div>
   );
 };

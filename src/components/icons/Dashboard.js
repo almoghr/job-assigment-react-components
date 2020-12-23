@@ -1,11 +1,11 @@
-import React from 'react'
-import {RiDashboardLine} from 'react-icons/ri'
+import React from "react";
+import { RiDashboardLine } from "react-icons/ri";
 const Dashboard = () => {
-    return (
-        <div>
-            <RiDashboardLine />
-        </div>
-    )
-}
+  return (
+    <div>
+      <RiDashboardLine />
+    </div>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

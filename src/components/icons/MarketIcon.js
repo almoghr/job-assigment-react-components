@@ -1,11 +1,11 @@
-import React from 'react'
-import {AiOutlineRise} from 'react-icons/ai'
+import React from "react";
+import { AiOutlineRise } from "react-icons/ai";
 const MarketIcon = () => {
-    return (
-        <div>
-            <AiOutlineRise />
-        </div>
-    )
-}
+  return (
+    <div>
+      <AiOutlineRise />
+    </div>
+  );
+};
 
-export default MarketIcon
+export default MarketIcon;

@@ -1,12 +1,12 @@
-import React from 'react'
-import {BsThreeDotsVertical} from 'react-icons/bs'
+import React from "react";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const ThreeDotsVertical = () => {
-    return (
-        <div>
-            <BsThreeDotsVertical />
-        </div>
-    )
-}
+  return (
+    <div>
+      <BsThreeDotsVertical />
+    </div>
+  );
+};
 
-export default ThreeDotsVertical
+export default ThreeDotsVertical;

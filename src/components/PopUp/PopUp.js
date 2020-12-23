@@ -27,12 +27,19 @@ const PopUp = (props) => {
         <div className="notificationFormation">
           <div className="topNotificationOrganizer">
             <div>{props.notification.description}</div>
-            <div className="notificationCreated">{props.notification.created}</div>
+            <div className="notificationCreated">
+              {props.notification.created}
+            </div>
           </div>
           <div className="bottomNotificationOrganizer">
-            <div className="notificationType">{props.notification.activity} </div> &nbsp;
+            <div className="notificationType">
+              {props.notification.activity}{" "}
+            </div>{" "}
+            &nbsp;
             <a href="#">
-              <div className="notificationSubject">{props.notification.subject} </div>
+              <div className="notificationSubject">
+                {props.notification.subject}{" "}
+              </div>
             </a>
           </div>
         </div>

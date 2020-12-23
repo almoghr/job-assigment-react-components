@@ -1,28 +1,27 @@
-.formContainer{
-    display: flex;
-    flex-direction: column;
-    
-    .fullNameLabel{
-        font-size: 10px;
-        margin-bottom: 4px;
-        color: rgba(178, 179, 189, 1);
-        font-weight: 500;
-    }
-    .form-Input{
-        background-color: rgba(228, 228, 228, 1);
-        outline: none;
-        border:none;
-        border-radius: 4px;
-        padding: 7px 10px;
-        &:focus{
-            border: 2px solid rgba(108, 93, 211, 1);
-            background-color: white;
-        }
-        &::placeholder{
-            color: black;
-            font-weight: 500;
-            font-size: 12px;
-        }
-    }   
-}
+.formContainer {
+  display: flex;
+  flex-direction: column;
 
+  .fullNameLabel {
+    font-size: 10px;
+    margin-bottom: 4px;
+    color: rgba(178, 179, 189, 1);
+    font-weight: 500;
+  }
+  .form-Input {
+    background-color: rgba(228, 228, 228, 1);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    &:focus {
+      border: 2px solid rgba(108, 93, 211, 1);
+      background-color: white;
+    }
+    &::placeholder {
+      color: black;
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+}

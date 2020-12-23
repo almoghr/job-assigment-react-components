@@ -1,12 +1,12 @@
-import React from 'react'
-import {FaRegCommentDots} from 'react-icons/fa'
+import React from "react";
+import { FaRegCommentDots } from "react-icons/fa";
 
 const CommentIcon = () => {
-    return (
-        <div>
-            <FaRegCommentDots />
-        </div>
-    )
-}
+  return (
+    <div>
+      <FaRegCommentDots />
+    </div>
+  );
+};
 
-export default CommentIcon
+export default CommentIcon;

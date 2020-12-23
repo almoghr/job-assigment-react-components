@@ -3,14 +3,10 @@ import ManyButtons from "../ManyButtons/ManyButtons";
 import { madeButtons } from "../../data/data";
 import "./ButtonDispencer.scss";
 const ButtonDispencer = () => {
-    console.log('hi')
-    console.log(madeButtons)
-    console.log(madeButtons.length)
   return (
     <div className="container">
       {madeButtons && madeButtons.length > 0 &&
         madeButtons.map((button, index) => {
-            console.log(button);
           return (
             <ManyButtons
               className="test"

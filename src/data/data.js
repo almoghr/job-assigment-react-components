@@ -21,3 +21,18 @@ export const madeButtons = [
     {type: 'fadeGrayBtn', icon:'3dots', description:'More Options'},
     {type: 'fadeGrayBtn', icon:'checkbox', description:'1 Selected'}
 ]
+
+export const upperMenuList = [
+    'Dashboard',
+    'Inventory',
+    'Affiliates',
+    'Orders',
+    'Customers',
+    'Website',
+    'Marketing',
+    'Admin'
+]
+export const lowerMenuList = [
+    {description: 'Inbox', length: 18},
+    {description: 'Notifications', length: notificationsArray.length}
+]           

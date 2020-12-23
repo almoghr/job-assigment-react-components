@@ -6,7 +6,6 @@ import MessageIcon from "../icons/MessageIcon";
 import './NotificationCircle.scss'
 
 const NotificationCircle = (props) => {
-    console.log(props.type)
     return (
         <div className={props.isNotification ? 'littleCircle relative notificationCircle' : 'littleCircle relative numberCircle'}>
         {!props.isNotification && props.notificationsLength}

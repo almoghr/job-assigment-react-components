@@ -6,11 +6,10 @@ import CheckedBox from '../icons/CheckedBox'
 import './ManyButtons.scss'
 
 const ManyButtons = (props) => {
-    console.log(props)
       return (
     <div className="btnContainer">
       {props.isBlackButton && (
-        <button className="btn blackBtn">
+        <button className={props.isNotification ? 'btn blackBtn wideBtn' : 'btn blackBtn'}>
           {props.isIcon && props.iconType === 'plus' && <PlusIcon className="icon"/>}
           {props.description}
         </button>

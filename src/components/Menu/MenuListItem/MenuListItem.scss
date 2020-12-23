@@ -1,0 +1,47 @@
+.upperli{
+  box-shadow: inset 0px -0.5px 0px rgb(128, 129, 145);;
+}
+
+.menuListLi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 0.9;
+  width: 100%;
+  padding: 15px 30px 15px 0;
+  color: white;
+  &:hover {
+    border-right: 2px solid blue;
+  }
+  .menuCircle{
+    background-color: rgb(255, 117, 76);
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    line-height: 17.5px;
+    width: 18px;
+    height: 18px;
+    color: white;
+    font-weight: 600;
+    margin-right: -13px;
+
+  }
+
+  .LiArranger {
+    display: flex;
+    .menuListLiLeftIcon {
+      margin-right: 10px;
+      div > svg {
+        fill: rgb(128, 129, 145);
+        stroke: rgb(128, 129, 145);
+      }
+      div > img > svg > path {
+        fill: rgb(128, 129, 145);
+      }
+    }
+  }
+
+  .menuListDescription {
+    margin-right: 30px;
+  }
+}

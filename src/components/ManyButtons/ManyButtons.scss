@@ -34,7 +34,11 @@
         &:focus{
             outline: none;
         }    
-  }
+  } 
+    .wideBtn{
+        width: 200px;
+        border-radius: 10px;
+    }
     .fadeGrayBtn {
         color: black;
         min-width: 100px;

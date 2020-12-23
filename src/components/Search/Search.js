@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import SearchIcon from "../icons/SearchIcon";
 import Xicon from "../icons/Xicon";
 import { recentSearchesArray } from "../../data/data";
@@ -9,7 +9,6 @@ import "./Search.scss";
 const Search = () => {
   const [isInputClicked, setisInputClicked] = useState(false);
 
-  // const inputEl = useRef(null);
 
   useEffect(() => {}, [isInputClicked]);
 
@@ -17,17 +16,15 @@ const Search = () => {
     setisInputClicked(!isInputClicked);
   };
 
-  const onBlurReaction = () => {
-    setisInputClicked(false);
-  };
-  const onCancelClick = () => {
-    console.log(isInputClicked);
-    setisInputClicked(false);
-    console.log(isInputClicked);
-  };
+  // const onBlurReaction = () => {
+  //   setisInputClicked(false);
+  // };
+  // const onCancelClick = () => {
+  //   console.log(isInputClicked);
+  //   setisInputClicked(false);
+  //   console.log(isInputClicked);
+  // };
 
-  // <PopUp key={index} description={description} isCircle={false} isNotification={false}/>
-  // <ManyButtons isIcon={false} description={'Advances Search'}/>
 
   return (
     <div className="flexCLM">
